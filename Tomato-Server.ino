@@ -1,7 +1,7 @@
 #include <WiFiS3.h>
 
 const char* ssid = "Madeline's Phone";  // or whatever your hotspot is called
-const char* password = "Tophat13";
+const char* password = "password here";
 
 const char* host = "tomato-2f12b-default-rtdb.firebaseio.com";
 const char* auth = ""; // leave empty if using open rules
