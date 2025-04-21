@@ -1,0 +1,265 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #0D5577;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    z-index: 1000;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  body {
+    background-color: #EEEEEE;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Optional spacing between cards */
+  }
+
+  .card {
+    background-color: #87C2E6;
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+    height: 550px;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .wrapper {
+    padding: 40px 60px; /* Top/bottom 40px, left/right 60px */
+    box-sizing: border-box;
+  }
+
+  .color-box {
+    display: inline-block; /* or 'block' for full-width boxes */
+    padding: 15px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .green-box {
+    position: absolute;
+    top: 394px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #072518;
+    color: #155724;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    height: 155px;
+  }
+  
+  .brown-box {
+    background-color: #4a2108; /* light brown */
+    color: #856404;            /* dark brown text */
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    height: 25%; /* bottom quarter */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 135px;
+  }
+
+  
+.tomato {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Adjust distance between tomato and green box */
+  }
+  
+  img.tomato {
+    position: absolute;
+    bottom: 60px; /* Adjust this value based on how high above the green box you want */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: auto;
+    z-index: 3; /* ensures it's above the green box */
+  }
+
+  img.sad-tomato {
+    position: absolute;
+    bottom: 50px; /* Adjust this value based on how high above the green box you want */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: auto;
+    z-index: 3; /* ensures it's above the green box */
+  }
+  img.depressed-tomato {
+    position: absolute;
+    bottom: 50px; /* Adjust this value based on how high above the green box you want */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: auto;
+    z-index: 3; /* ensures it's above the green box */
+  }
+  
+  .moisture-wrapper {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .moisture-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .moisture-bar {
+    width: 70%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  }
+  
+  .moisture-fill {
+    height: 100%;
+    background-color: #4CAF50; /* Green for moisture */
+    width: 0%; /* Set via inline style */
+    transition: width 0.4s ease;
+  }
+  
+  .moisture-fill.low { background-color: #f44336; }      /* red */
+  .moisture-fill.medium { background-color: #ff9800; }   /* orange */
+  .moisture-fill.high { background-color: #4CAF50; }     /* green */
+
+  .nitrogen-wrapper {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .nitrogen-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .nitrogen-bar {
+    width: 70%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  }
+  
+  .nitrogen-fill {
+    height: 100%;
+    background-color: #4CAF50; /* Green for moisture */
+    width: 0%; /* Set via inline style */
+    transition: width 0.4s ease;
+  }
+  
+  .nitrogen-fill.low { background-color: #f44336; }      /* red */
+  .nitrogen-fill.medium { background-color: #ff9800; }   /* orange */
+  .nitrogen-fill.high { background-color: #4CAF50; }     /* green */
+
+  .phosphorous-wrapper {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .phosphorous-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .phosphorous-bar {
+    width: 70%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  }
+  
+  .phosphorous-fill {
+    height: 100%;
+    background-color: #4CAF50; /* Green for moisture */
+    width: 0%; /* Set via inline style */
+    transition: width 0.4s ease;
+  }
+  
+  .phosphorous-fill.low { background-color: #f44336; }      /* red */
+  .phosphorous-fill.medium { background-color: #ff9800; }   /* orange */
+  .phosphorous-fill.high { background-color: #4CAF50; }     /* green */
+
+  .potassium-wrapper {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .potassium-label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .potassium-bar {
+    width: 70%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    height: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  }
+  
+  .potassium-fill {
+    height: 100%;
+    background-color: #4CAF50; /* Green for moisture */
+    width: 0%; /* Set via inline style */
+    transition: width 0.4s ease;
+  }
+  
+  .potassium-fill.low { background-color: #f44336; }      /* red */
+  .potassium-fill.medium { background-color: #ff9800; }   /* orange */
+  .potassium-fill.high { background-color: #4CAF50; }     /* green */
