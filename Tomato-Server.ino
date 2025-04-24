@@ -26,25 +26,11 @@ void loop() {
     return;
   }
 
-  String plantName = "Tomato";
-  String rfid = "Tomato RFID";
-  int nitrogen = 5;
-  int phosphorus = 10;
-  int potassium = 5;
   int soilMoisture = 42;
-
   // Construct JSON manually
   String data = "{";
-  data += "\"plantName\":\"" + plantName + "\",";
-  data += "\"rfid\":\"" + rfid + "\",";
-  data += "\"npkData\":{";
-  data += "\"N\":" + String(nitrogen) + ",";
-  data += "\"P\":" + String(phosphorus) + ",";
-  data += "\"K\":" + String(potassium);
-  data += "},";
   data += "\"soilMoisture\":" + String(soilMoisture);
   data += "}";
-
   // Firebase URL path
   String url = "/plantData.json";
 
