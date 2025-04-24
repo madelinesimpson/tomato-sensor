@@ -1,6 +1,6 @@
 #include <WiFiS3.h>
 
-const char* ssid = "Madeline's Phone";  // or whatever your hotspot is called
+const char* ssid = "Madeline's Phone";  // or whatever your network is called
 const char* password = "password here";
 
 const char* host = "tomato-2f12b-default-rtdb.firebaseio.com";
