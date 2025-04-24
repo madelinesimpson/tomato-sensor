@@ -3,7 +3,7 @@
 const char* ssid = "Madeline's Phone";  // or whatever your network is called
 const char* password = "password here";
 
-const char* host = "tomato-2f12b-default-rtdb.firebaseio.com";
+const char* host = "database link here";
 const char* auth = ""; // leave empty if using open rules
 
 WiFiSSLClient client;
